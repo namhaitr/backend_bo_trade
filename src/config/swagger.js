@@ -6,9 +6,9 @@ const swaggerOptions = {
     definition: {
         openapi: '3.0.0',
         info: {
-            title: 'BO TRADER API',
+            title: 'Node.js API',
             version: '1.0.0',
-            description: 'API BACKEND',
+            description: 'API đăng nhập với các vai trò khác nhau',
         },
         servers: [
             {

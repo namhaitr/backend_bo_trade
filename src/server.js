@@ -13,7 +13,11 @@ app.use(bodyParser.json());
 
 // Routes
 const authRoutes = require('./routes/auth');
+const walletRoutes = require('./routes/wallet');
+const tradeRoutes = require('./routes/trade');
 app.use('/api/auth', authRoutes);
+app.use('/api/wallets', walletRoutes);
+app.use('/api/trade', tradeRoutes);
 
 // Swagger Documentation
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
